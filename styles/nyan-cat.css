@@ -1,0 +1,116 @@
+#nyan-cat-contenair {
+    width: 30vw;
+    height: 20vh;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+#streak-contenair {
+    width: 40%;
+    height: 35%;
+    background: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.streak {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column
+}
+
+.part-1 {
+    width: 33%;
+    background-color: black;
+}
+
+.part-2 {
+    width: 33%;
+    background-color: brown;
+}
+
+.part-3 {
+    width: 33%;
+    background-color: yellow;
+}
+
+.streak-row {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.blue {
+    background-color: rgb(44, 23, 228);
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pink {
+    background-color: rgb(230, 80, 237);
+}
+
+#body-contenair {
+    width: 40%;
+    height: 80%;
+    border-radius: 5%;
+    background: #f5be90;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#body-cream {
+    width: 90%;
+    height: 85%;
+    border-radius: 10%;
+    background: rgb(229, 83, 237);
+}
+
+#head-contenair {
+    height: 50%;
+    width: 16%;
+    background: rgb(33, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+
+#ear-contenair {
+    height: 3%;
+    width: 4%;
+    margin-bottom: 5.5%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ear {
+    height: 0;
+    width: 0;
+    border-bottom: 1.2em solid grey;
+    border-left: 1.5em solid transparent;
+}
+
+#head {
+    height: 85%;
+    width: 85%;
+    border-radius: 5%;
+    background: grey;
+    display: flex;
+    justify-content: space-around;
+}
+
+.eyes {
+    margin-top: 20%;
+    height: 10%;
+    width: 20%;
+    background-color: rgb(33, 33, 33)
+}

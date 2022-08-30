@@ -1,0 +1,17 @@
+.stars {
+    background-color: rgba(240, 248, 255, 0.689);
+    height: 0.5em;
+    width: 0.5em;
+    box-shadow: 0px 0px 10px 2px whitesmoke;
+    position: absolute;
+    animation: spaceAnimation 4s linear;
+}
+
+@keyframes spaceAnimation {
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-100vw)
+    }
+}
