@@ -1,4 +1,10 @@
-@import url('http://fonts.cdnfonts.com/css/common-pixel');
+@font-face {
+    font-family: 'common_pixelregular';
+    src: url('.font/commp___-webfont.woff2') format('woff2'), url('.font/commp___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -8,7 +14,7 @@ body {
 
 #start {
     color: #fff;
-    font-family: 'Common Pixel';
+    font-family: 'common_pixelregular' sans-serif;
     font-size: 5em;
     font-weight: bold;
     left: 50%;

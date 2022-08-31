@@ -1,3 +1,5 @@
+import { meteoriteFunc1, meteoriteFunc2 } from './enemy.js';
+
 const player = document.querySelector('#nyan-cat-contenair');
 const start = document.querySelector('#start');
 
@@ -17,7 +19,9 @@ const startGame = () => {
         (e.key === 'Enter') ? (
             player.classList.remove("started"),
             player.classList.add("notStarted"),
-            start.classList.add("started")
+            start.classList.add("started"),
+            setInterval(meteoriteFunc1, 750),
+            setInterval(meteoriteFunc2, 1500)
         ) : (console.log("log | type : function | Location : startGame"))
 
     })
@@ -28,22 +32,24 @@ const actions = () => {
 
     window.addEventListener('keydown', e => {
 
-        let speedW = 1;
-        let speedH = 2;
+        let speedW = 2;
+        let speedH = 3;
+        const posX = parseInt(player.style.left);
+        const posY = parseInt(player.style.top);
 
         switch (e.key) {
 
             case 'ArrowRight':
-                player.style.left = parseInt(player.style.left) + speedW + "vw";
+                if (posX < 90) player.style.left = parseInt(player.style.left) + speedW + "vw";
                 break;
             case 'ArrowLeft':
-                player.style.left = parseInt(player.style.left) - speedW + "vw";
+                if (posX > 0) player.style.left = parseInt(player.style.left) - speedW + "vw";
                 break;
             case 'ArrowUp':
-                player.style.top = parseInt(player.style.top) - speedH + "vh";
+                if (posY > 0) player.style.top = parseInt(player.style.top) - speedH + "vh";
                 break;
             case 'ArrowDown':
-                player.style.top = parseInt(player.style.top) + speedH + "vh";
+                if (posY < 88) player.style.top = parseInt(player.style.top) + speedH + "vh";
                 break;
 
         }
